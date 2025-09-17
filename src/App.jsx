@@ -18,17 +18,21 @@ function App() {
 ])  
  
  
- 
- 
+  
  
   return (
     <>
-      <div>
+        <div className={`h-44 w-[164px]
+           bg-[#0000ff]
+           pt-4 pb-4 
+           transition-all
+           duration-150
+           border-2 border-b-amber-950
+            hover:bg-blue-400`}>My div</div>
+      <div className='hidden'>
            <h1>
      TODO APP
            </h1>
-       
-          
            {
             todos.map(
               (todo) =>
