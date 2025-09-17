@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { MyHeader } from './components/MyHeader'
 import { TodoItem } from './components/TodoItem'
+// this is my comment
 
  
 function App() {
@@ -15,10 +16,7 @@ function App() {
     id : Math.random(),
     isDone : true
   }
-])  
- 
- 
-  
+])   
  
   return (
     <>
