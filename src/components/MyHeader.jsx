@@ -1,9 +1,19 @@
+import { useEffect } from "react"
+
  
 export function MyHeader () {
-    return ( <div><h1 style={ {
+
+
+   
+ 
+ 
+    return ( 
+    <div>
+      <h1 style={ {
         fontSize: "30px"
           }}>
-         This is my header
-          </h1>
-          </div>)
+         This is my Todo app
+      </h1>
+
+    </div>)
 }
