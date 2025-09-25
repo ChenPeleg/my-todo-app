@@ -4,57 +4,22 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { MyHeader } from './components/MyHeader'
 import { TodoItem } from './components/TodoItem'
+import { HomePage } from './pages/HomePage'
+import { BrowserRouter, Route, Router, Routes } from 'react-router'
 
  
-function App() {
-  const [todoText, setTodoText] = useState('')
-  const [ todos ,setTodos] = useState([
-    {
-    text : "תעשה כלים בכיור",
-    id : Math.random(),
-    isDone : true
-  }
-])   
+export default function App() {
 
+  return <>
+  <BrowserRouter>
 
- 
-  return (
-    <>
-      <div className='flex flex-col'>
-      <MyHeader/>
-           {
-            todos.map(
-              (todo) =>
-                  {  
-                    return  <TodoItem todo={todo} key={todo.id} todos={todos} setTodos={setTodos}/>
-                  }
-                )
-           }
+     <Routes>
+       <Route path='/' element={<HomePage/>}/> 
 
-           <button onClick={()=>{
-            const newTodo =
-               {
-                text : todoText,
-                id : Math.random(),
-                isDone : false
-            } 
-             setTodos([...todos,newTodo]) 
-             setTodoText('')
-           }}>
-            הוסף משימה
-           </button>
-           <div>
+     </Routes>
+  </BrowserRouter>
 
-           <input className='p-3 ring-1 ring-slate-500 rounded-full' value={todoText} onChange={(event)=>{
-            
-           setTodoText(event.target.value)
-           }}/>
-           </div>
-           
-     </div>
-    
-    </>
-  )
+  <HomePage/>
+  </>
 }
-
-export default App
+ 
