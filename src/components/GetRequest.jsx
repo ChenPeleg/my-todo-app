@@ -14,12 +14,16 @@ export const GetRequest = () => {
         })
     }, [])
 
-
-//https://http.cat/[status_code]
+ 
     return <div>
         <div className="p-6 text-4xl">
 
        Search emoji
+        </div>
+        <div className="p-6">
+            <input className="p-3 ring-1 ring-slate-500 rounded-2xl" value={searchString} onChange={(ev)=> {
+                setSearchString (ev.target.value)
+            }}/>
         </div>
         <div>
             {}
