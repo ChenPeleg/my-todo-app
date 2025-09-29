@@ -22,8 +22,7 @@ export function HomePage() {
   return (
     <>
       <div className='flex flex-col'>
-      <MyHeader/>
-      <GetRequest/>
+      <MyHeader/> 
            {
             todos.map(
               (todo) =>
