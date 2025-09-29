@@ -1,6 +1,7 @@
 import axios, { Axios } from "axios"
 import { use, useEffect, useState } from "react"
 //https://emojihub.yurace.pro/api/categories
+// (`https://emojihub.yurace.pro/api/search?q=${searchString}`
 const axoisClient =   axios.create( )
 
 export const GetRequest = () => {
