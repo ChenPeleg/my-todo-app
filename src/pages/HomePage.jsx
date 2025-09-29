@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import '../App.css'
 import { MyHeader } from '../components/MyHeader'
 import { TodoItem } from '../components/TodoItem'
+import { GetRequest } from '../components/GetRequest'
 
  
 export function HomePage() {
@@ -22,6 +23,7 @@ export function HomePage() {
     <>
       <div className='flex flex-col'>
       <MyHeader/>
+      <GetRequest/>
            {
             todos.map(
               (todo) =>

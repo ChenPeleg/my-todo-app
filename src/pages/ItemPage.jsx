@@ -1,3 +1,13 @@
+ 
+import { useParams } from "react-router"
+
 export  function ItemPage () {
-    return <div>item page</div>
+ 
+    
+    const {id} = useParams() 
+    
+
+    return <div>item page for item id  {id}
+ 
+    </div>
 }
