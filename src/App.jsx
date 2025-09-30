@@ -10,6 +10,7 @@ import { ItemPage } from './pages/ItemPage'
 import { ExamplePage } from './pages/MyExamplePage'
 import { Page404 } from './pages/404Page'
 import { Link } from 'react-router'
+import { GetImojies } from './components/GetImojies'
 
  
 export default function App() {
@@ -29,6 +30,7 @@ export default function App() {
        <Route path='/home' element={<HomePage/>}  />  
        <Route path='/item/:id' element={<ItemPage/>}/> 
        <Route path='/example' element={<ExamplePage/>}/> 
+       <Route path='/get-emojies' element={<GetImojies/>}/>
        <Route path='*' element={<Page404/>}/> 
      </Routes>
   </BrowserRouter>
